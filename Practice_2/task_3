@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+
+int main(){
+
+    int n10 = 0, n2 = 0, r = 1;
+    cout << "Enter a number:" << endl;
+    cin >> n10;
+    while(n10)
+    {
+        n2 += (n10%2) * r;
+        n10 = n10 / 2;
+        r = r * 10;
+    }
+    cout << n2;
+    return 0;
+}

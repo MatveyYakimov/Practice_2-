@@ -1,0 +1,23 @@
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int dec, bin, mod;
+
+    cin >> dec;
+
+    while (dec)
+    {
+        mod = dec % 2;
+        dec /= 2;
+
+        bin = 10*bin+mod;
+    }
+
+    cout << bin << endl;
+
+    system("pause");
+}
